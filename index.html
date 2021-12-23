@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const myUrl = new URL(window.location)
+        OneUrl = "http://" + myUrl.host + "/" 
+        function HomeBtn(){
+            window.location.href =  OneUrl
+        }
+        function AppBtn(){
+            window.location.href =' Apps'
+            
+        }
+        function PluginsBtn(){
+            window.location.href =' Plugins'
+    
+        }
+    </script>
+    <div id="header">
+    <p onclick="HomeBtn()" class="HOMEBTN">صفحه اصلی</p>
+    <p onclick="AppBtn()" class="APPBTN">برنامه ها</p>
+    <p onclick="PluginsBtn()" class="PluginsBTN">پلاگین ها</p>
+    </div>
+
+    <div class="homepage">
+        <img src="img/Untitled.png" alt="" class="homepageimg1">
+        <div class="homepagediv1"></div>
+        <h1 class="homepageh11">خوش امدید</h1>
+        <h5 class="homepageh51"> سایت برنامه های کوچک کم حجم و پر کار برد و اموزش برنامه نویسی</h5>
+        <h5 class="homepageh52">---------------------------------------------------------------------</h5>
+        <div class="btnshomepage">
+            <button class="btnshomepagebtn1" onclick="HomeBtn()">صفحه اصلی</button>
+            <button class="btnshomepagebtn2" onclick="AppBtn()">برنامه ها</button>
+            <button class="btnshomepagebtn3" onclick="PluginsBtn()">پلاگین ها</button>
+            <p class="btnshomepagep1">erfanadelicoder</p>
+        </div>
+        
+        
+    </div>
+</body>
+</html>

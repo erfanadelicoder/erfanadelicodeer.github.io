@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dfdfd</title>
+    <title>Document</title>
 </head>
-<link rel="stylesheet" href="css.css">
-<body style="background-color: #cfcfcf;">
+<body>
+    <script>
+        const myUrl = new URL(window.location)
+        console.log(myUrl);
+        OneUrl = "http://" + myUrl.host + "/" 
+        function HomeBtn(){
+            window.location.href =  OneUrl
+        }
+        function AppBtn(){
+            window.location.href =OneUrl + 'Apps'
+            
+        }
+        function PluginsBtn(){
+            window.location.href =OneUrl + 'Plugins'
+    
+        }
+    </script>
+    <div id="header">
+    <p onclick="HomeBtn()" class="HOMEBTN">صفحه اصلی</p>
+    <p onclick="AppBtn()" class="APPBTN">برنامه ها</p>
+    <p onclick="PluginsBtn()" class="PluginsBTN">پلاگین ها</p>
+    </div>
 
+    <div class="homepage">
+        <i class="Id_NotePro">
+            <p>NotePro</p>
+            <button onclick="window.location.href =OneUrl + '/Apps/App_Id_To_Dl/NotePro/'">دانلود</button>
+
+        </i>
+    </div>
 </body>
 </html>
